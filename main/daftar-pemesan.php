@@ -48,6 +48,7 @@ $result = mysqli_query($conn, $sql);
                             <td>
                                 <a href='index.php?route=edit&id=<?= $row['id'] ?>' class='btn btn-warning btn-sm'>Edit</a>
                                 <a href='lib/delete.php?id=<?= $row['id'] ?>' class='btn btn-danger btn-sm' onclick='return confirm("Apakah Anda yakin ingin menghapus data ini?")'>Hapus</a>
+                                <a href='index.php?route=detail&id=<?= $row['id'] ?>' class='btn btn-primary btn-sm'>Detail</a>
                             </td>
                         </tr>
                     <?php }

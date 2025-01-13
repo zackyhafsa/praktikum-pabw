@@ -1,4 +1,4 @@
-<div class="header bg-primary overflow-hidden">
+<div class="header bg-primary overflow-hidden no-print">
     <img src="src/bg.jpg" alt="" class="w-100" />
 </div>
 <!-- navbar -->
@@ -18,7 +18,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.php?route=home">Beranda</a>
                 </li>
@@ -30,9 +30,5 @@
                 </li>
             </ul>
         </div>
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Cari" aria-label="Search" />
-            <button class="btn btn-outline-light" type="submit">Cari</button>
-        </form>
     </div>
 </nav>

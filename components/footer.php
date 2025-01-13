@@ -1,4 +1,4 @@
-<footer class="footer-07 bg-success text-white py-4 overflow-hidden">
+<footer class="footer-07 bg-success text-white py-4 overflow-hidden no-print">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 text-center">

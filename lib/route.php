@@ -12,9 +12,9 @@ switch ($route) {
         include 'main/edit-form.php';
         break;
     case 'detail':
-        include 'main/detail.php';
+        include 'main/detail_pemesan.php';
         break;
-        
+
     default:
         include 'main/home.php';
         break;

@@ -1,5 +1,5 @@
       <!-- form -->
-      <form class="w-75 mx-auto mt-3 mb-5 border px-5 py-3 rounded" id="formPemesanan" method="post" action="lib/proses-pemesanan.php">
+      <form class="w-75 w-md-100 mx-auto mt-3 mb-5 border px-5 py-3 rounded" id="formPemesanan" method="post" action="lib/proses-pemesanan.php">
         <h2>Form Pemesanan Tiket Wisata</h2>
 
         <div class="mb-3">
