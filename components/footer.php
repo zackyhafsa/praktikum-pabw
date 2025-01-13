@@ -36,7 +36,7 @@
             <div class="col-md-12 text-center">
                 <p class="mb-0">&copy;<script>
                         document.write(new Date().getFullYear());
-                    </script> All rights reserved | This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-white">Colorlib.com</a></p>
+                    </script> All rights reserved | <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://github.com/zackyhafsa" target="_blank" class="text-white">ZackyHafsa</a></p>
             </div>
         </div>
     </div>
