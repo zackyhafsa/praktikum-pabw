@@ -28,7 +28,21 @@ if (isset($_GET['id']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (mysqli_query($conn, $sql)) {
         // Redirect ke halaman daftar pemesanan setelah sukses mengupdate
-        header("Location: ../index.php?route=daftar-pemesan");
+        echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+        echo "<script>
+            document.addEventListener('DOMContentLoaded', function() {
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Data berhasil diupdate.',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = '../index.php?route=daftar-pemesan';
+                    }
+                });
+            });
+        </script>";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }

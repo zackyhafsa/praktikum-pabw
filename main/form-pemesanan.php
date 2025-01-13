@@ -52,7 +52,7 @@
         </div>
 
 
-        <button type="submit" class="btn btn-primary" name="submit">Update</button>
+        <button type="submit" class="btn btn-primary" name="submit">Kirim</button>
         <button type="button" class="btn btn-primary" onclick="hitungHarga()">Hitung</button>
         <button type="reset" class="btn btn-danger">Reset</button>
       </form>

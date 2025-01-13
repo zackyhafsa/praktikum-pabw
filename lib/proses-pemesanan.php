@@ -22,7 +22,21 @@ if (isset($_POST['submit'])) {
 
     // Eksekusi query
     if ($conn->query($sql) === TRUE) {
-        header('Location: ../index.php');
+        echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+        echo "<script>
+            document.addEventListener('DOMContentLoaded', function() {
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Data berhasil disimpan.',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = '../index.php';
+                    }
+                });
+            });
+        </script>";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

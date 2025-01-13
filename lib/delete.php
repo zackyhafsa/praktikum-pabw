@@ -11,7 +11,21 @@ if (isset($_GET['id'])) {
 
     if (mysqli_query($conn, $sql)) {
         // Redirect ke halaman daftar pemesanan setelah sukses menghapus
-        header("Location: ../index.php?route=daftar-pemesan");
+        echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
+        echo "<script>
+            document.addEventListener('DOMContentLoaded', function() {
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Data berhasil dihapus.',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = '../index.php?route=daftar-pemesan';
+                    }
+                });
+            });
+        </script>";
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);

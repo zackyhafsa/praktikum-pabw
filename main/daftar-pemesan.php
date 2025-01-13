@@ -8,7 +8,7 @@ $result = mysqli_query($conn, $sql);
 ?>
 
 <div class="hero">
-    <div class="container mt-5">
+    <div class="container my-5">
         <h2 class="mb-4">Daftar Pemesanan Tiket Wisata</h2>
 
         <table class="table table-bordered">
